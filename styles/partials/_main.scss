@@ -1,0 +1,31 @@
+/* aca empiezan los estilos para la card con el boton concoe mas*/
+
+main{
+
+    .principal-index{
+        .card-body{
+        text-align: left;
+        background-color: whitesmoke;
+        }
+        .card-title{
+        background-color: whitesmoke;
+        font-weight: bold;
+        }
+        .card-text{
+        background-color: whitesmoke;
+        }
+
+    }
+
+/* aca terminan los estilos para la card con la imagen roja del index*/
+
+/*aca empiezan los estilos de las cards de mision vision y valores*/
+
+    .mvv{
+        .card-title-mvv{
+        background-color: whitesmoke;
+        font-weight: bold;
+        }
+    }
+/*aca terminan los estilos de las cards de mision vision y valores*/
+}

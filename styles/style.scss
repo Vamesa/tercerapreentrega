@@ -1,0 +1,147 @@
+@import "./partials/mixin";
+@import "./partials/extend";
+@import "./partials/buttons";
+@import "./partials/maps";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "./partials/footer";
+@import "./partials/header";
+@import "./partials/main";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+    font-family:"Roboto";
+}
+
+
+/* aca comienzas los estilos de la pagina Servicios*/
+.controlyseguridad{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+}
+
+.mapa{
+text-align: center;
+}
+
+
+/*Grillas index*/
+
+.contenedor-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.2fr 0,5fr 0.2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "mision vision valores"
+    "footer footer footer"
+}
+
+.encabezado{
+    grid-area: header;
+}
+
+.principal-index{
+    grid-area: main;
+}
+
+.mision{
+    grid-area: mision;
+}
+
+.vision{
+    grid-area: vision;
+}
+
+.valores{
+    grid-area: valores;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 360px){
+    
+    .logovynks {
+        height: 50%;
+        width: 10%;
+        display:flex;
+        justify-content: left;
+        background-color: brown;
+    
+    }
+    
+    nav ul li a{
+        display: flex;
+        background-color: brown;
+        text-decoration: none;
+        font-size: larger;
+        font-weight:bolder;
+        color:#e8e8e8;
+    }
+    
+    ul {
+        display:flex;
+        background-color: brown;
+        list-style-type: none;
+        justify-content: space-around;
+        
+    }
+
+    .titulo{
+        position: center;
+        top: 10px;
+        left:auto;
+        background-color:#e8e8e8;
+    }
+
+    .misionvisionvalores{
+        justify-content: left;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        background-color: brown;
+        text-align: left;
+    }
+
+    .servicios{
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+}
+
+.principal-index{
+    background-image: url(../img/red-fabric-texture.jpg);
+}
+    
+/*grilla servicios*/
+
+.contenedor.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.2fr 0,5fr 0.2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+    "header header header"
+    "hardware software firmware"
+    "footer footer footer"
+}
+
+

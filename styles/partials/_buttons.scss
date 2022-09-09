@@ -1,0 +1,14 @@
+.btn{
+    @extend %botonBase;
+    background-color: brown;
+
+}
+
+.botoncard{
+    @include botonescards(border-radius none)
+}
+
+
+.botoncontacto{
+    background-color: map-get($estilos, colorSecundario);
+}

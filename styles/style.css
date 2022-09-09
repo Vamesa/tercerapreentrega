@@ -1,0 +1,204 @@
+/*# sourceMappingURL=style.css.map */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+    font-family:"Roboto";
+}
+
+/*aca comienza el estilo del encabezado*/
+.encabezado {
+    background-color: brown;
+}
+
+
+.logovynks {
+    display:flex;
+    justify-content: left;
+    background-color: brown;
+
+}
+
+nav ul li a{
+    display: flex;  
+    background-color: brown;
+    text-decoration: none;
+    font-size: larger;
+    font-weight:bolder;
+    color:#e8e8e8;
+    
+    }
+
+ul {
+    display:flex;
+    background-color: brown;
+    list-style-type: none;
+    justify-content: space-around;
+}
+/*aca termina el estilo del encabezado*/
+
+/* aca empiezan los estilos para la card con la imagen roja del index*/
+
+.card-body{
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+.card-title{
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.card-text{
+    background-color: whitesmoke;
+}
+
+/* aca terminan los estilos para la card con la imagen roja del index*/
+
+/*aca empiezan los estilos de las cards de mision vision y valores*/
+
+.card-title-mvv{
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+/*aca terminan los estilos de las cards de mision vision y valores*/
+
+
+/*aca empiezan los estilos del footer*/
+.footer{
+    font-weight: normal;
+    color: #e8e8e8;
+}
+/*aca terminan los estilos del footer*/
+
+/* aca comienzas los estilos de la pagina Servicios*/
+.controlyseguridad{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+}
+
+
+.mapa{
+text-align: center;
+}
+
+
+/*Grillas index*/
+
+.contenedor-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.2fr 0,5fr 0.2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "mision vision valores"
+    "footer footer footer"
+}
+
+.encabezado{
+    grid-area: header;
+}
+
+.principal-index{
+    grid-area: main;
+}
+
+.mision{
+    grid-area: mision;
+}
+
+.vision{
+    grid-area: vision;
+}
+
+.valores{
+    grid-area: valores;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 360px){
+    
+    .logovynks {
+        height: 50%;
+        width: 10%;
+        display:flex;
+        justify-content: left;
+        background-color: brown;
+    
+    }
+    
+    nav ul li a{
+
+    background-color: brown;
+    text-decoration: none;
+    font-size: larger;
+    font-weight:bolder;
+    margin-right: 30px;
+    color:#e8e8e8
+    
+    }
+    
+    ul {
+        background-color: brown;
+        list-style-type: none;
+        display:flex;
+        justify-content: left;
+        
+    }
+
+    .titulo{
+        position: center;
+        top: 10px;
+        left:auto;
+        background-color:#e8e8e8;
+    }
+
+    .misionvisionvalores{
+        justify-content: left;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        background-color: brown;
+        text-align: left;
+    }
+
+    .servicios{
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+}
+    
+/*grilla servicios*/
+
+.contenedor.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.2fr 0,5fr 0.2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+    "header header header"
+    "hardware software firmware"
+    "footer footer footer"
+}
+
+

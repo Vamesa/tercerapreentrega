@@ -1,0 +1,36 @@
+/*aca comienza el estilo del encabezado*/
+
+{.encabezado
+    .logovynks{
+        display:flex;
+        justify-content: left;
+        background-color: $background-header;
+
+    }
+
+    nav{
+        ul{
+        background-color: $background-header;
+        list-style-type: none;
+        display:flex;
+        justify-content: right;
+        }
+        li{
+            a{  &:hover{
+            background-color: blue;
+             }
+            display: flex;
+            background-color: $background-header;
+            text-decoration: none;
+            font-size:medium;
+            font-weight:bolder;
+            margin-right: 30px;
+            color: $primary-color;
+            
+            }
+        }
+    }
+
+}
+
+/*aca termina el estilo del encabezado*/
